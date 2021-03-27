@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="columns">
+  <div class="column" v-for="project in projects" :key="project.name">
+    <div class="card">
+      <header class="card-header">
+    <p class="card-header-title">
+      {{project.name}}
+    </p>
+  </header>
+  <div class="card-image">
+    <figure class="image is-4by3">
+      <img :src="project.img ? require('../assets/'+project.img) : null" />
+    </figure>
+  </div>
+</div>
+  </div>
+</div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import { mapGetters } from 'vuex'
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
+  computed: {
+    ...mapGetters({
+      projects: 'getProjects'
+    })
   }
 }
+
 </script>
