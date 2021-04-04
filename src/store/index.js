@@ -12,11 +12,11 @@ export default new Vuex.Store({
       },
       {
         name: 'Business analysis',
-        img: null
+        img: 'Banalysis.jpg'
       },
       {
         name: 'Web development',
-        img: null
+        img: 'WebDevelopment.jpg'
       }
     ]
   },
