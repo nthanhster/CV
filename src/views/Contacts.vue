@@ -1,13 +1,24 @@
 <template>
-  <div class="notification is-primary">Contacts
-    <p> Hello Contacts!
-      </p>
+  <div>
+    <div>
+      <div class="notification is-primary">Contacts
+        <p> Hello Contacts!
+          </p>
+      </div>
+      <div class="column is-4">
+        <a class="column is-hcentered">
+          <simpleform/>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
+import Simpleform from '@/components/Simpleform.vue'
 export default {
-  name: 'Contacts'
+  name: 'Contacts',
+  components: { Simpleform }
 }
 </script>

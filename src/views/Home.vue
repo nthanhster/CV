@@ -22,12 +22,10 @@
 </template>
 
 <script>
-import SimpleForm from '../components/SimpleForm.vue'
 import { mapGetters } from 'vuex'
 
 export default {
   name: 'Home',
-  components: { SimpleForm },
   computed: {
     ...mapGetters({
       projects: 'getProjects'

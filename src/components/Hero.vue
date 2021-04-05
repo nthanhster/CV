@@ -1,22 +1,25 @@
 <template>
     <div>
-    <section class="hero is-medium is-link">
+        <section class="hero is-link is-halfheight">
         <div class="hero-body">
-        <p class="title">
-            Thanh Hero
-        </p>
-        <p class="subtitle">
-            We offer you the best service!
-        </p>
+            <div class="">
+                <p class="title">
+                Fullheight Thanh
+                </p>
+                <p class="subtitle">
+                Fullheight hero with navbar
+                </p>
+            </div>
         </div>
-    </section>
+        </section>
     </div>
 </template>
 <script>
+
 export default {
   name: 'Hero'
 }
 </script>
 
-<style>
+<style scoped>
 </style>
