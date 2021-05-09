@@ -5,8 +5,8 @@
         <p> Hello Contacts!
           </p>
       </div>
-      <div class="column is-4">
-        <a class="column is-hcentered">
+      <div class="columns is-mobile is-centered">
+        <a class="column is-4">
           <simpleform/>
         </a>
       </div>

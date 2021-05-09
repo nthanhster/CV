@@ -13,7 +13,7 @@
                     <b-input maxlength="200" type="textarea"></b-input>
                 </b-field>
                 <b-field>
-                    <input class="button" type="submit" value="Submit Message">
+                    <input class="button" type="submit" value="Submit">
                 </b-field>
             </section>
         </div>
